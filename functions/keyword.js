@@ -49,3 +49,11 @@ const oneArgRestParams =
   function (n, ...args) {
     return n + args.length
   }
+
+const buildObject =
+  function (name, manager) {
+    return {
+      name: name,
+      manager: manager
+    }
+  }

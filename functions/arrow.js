@@ -47,3 +47,22 @@ const restParams =
 
 const oneArgRestParams =
   (n, ...args) => n + args.length
+
+
+
+const buildObject =
+  (name, manager) => ({
+    name: name,
+    manager: manager
+  })
+
+console.log(`const obj = buildObject('Peter', 'Michael')`)
+const obj = buildObject('Peter', 'Michael')
+console.log(`obj:`)
+console.log(obj)
+obj.salary = 100
+console.log(`obj:`)
+console.log(obj)
+console.log(`name: ${obj.name}`)
+console.log(`manager: ${obj.manager}`)
+console.log(`salary: ${obj.salary}`)
